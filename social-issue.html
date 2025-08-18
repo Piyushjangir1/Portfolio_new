@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Social Issue — Water Scarcity (Rajasthan) — Piyush Jangir</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <div class="brand">PJ</div>
+        <div class="brand-text">Piyush Jangir</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="social-issue.html">Social Issue</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section reveal">
+      <h2>Social Issue — Water Scarcity & Groundwater Depletion (Rajasthan)</h2>
+      <p style="color:var(--muted)">
+        Rajasthan faces recurring water stress due to low rainfall, over-extraction of groundwater, and inefficient water use in agriculture. This reduces drinking water availability, impacts agriculture-based livelihoods, and increases migration pressure.
+      </p>
+
+      <div class="issue-grid" style="margin-top:18px">
+        <div>
+          <div class="card reveal">
+            <h3>Why it matters</h3>
+            <ul style="color:var(--muted);margin-top:8px;line-height:1.6">
+              <li>Many rural communities depend on groundwater for drinking and crops.</li>
+              <li>Overuse of groundwater leads to falling water tables and saline intrusion.</li>
+              <li>Water scarcity increases vulnerability during droughts and affects livelihoods.</li>
+            </ul>
+          </div>
+
+          <div class="card reveal" style="margin-top:12px">
+            <h3>Practical Solutions</h3>
+            <ol style="color:var(--muted);margin-top:8px;line-height:1.6">
+              <li>Rainwater harvesting at household and community level.</li>
+              <li>Micro-irrigation (drip/sprinkler) to reduce farm water use.</li>
+              <li>Fixed water budgets and monitored groundwater extraction.</li>
+              <li>Awareness programs for water-efficient crops & practices.</li>
+              <li>Local recharge projects (check dams, percolation tanks).</li>
+            </ol>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card reveal">
+            <h3>Illustrative stats</h3>
+            <p style="color:var(--muted)">Sample figures to show how groundwater levels changed (illustrative)</p>
+            <div class="chart-wrap" style="margin-top:8px">
+              <canvas id="waterChart" width="400" height="300"></canvas>
+            </div>
+          </div>
+
+          <div class="card reveal" style="margin-top:12px">
+            <h3>Call to action</h3>
+            <p style="color:var(--muted)">If you want to collaborate on a small community app to map water resources or a simple awareness website, <a href="contact.html" style="color:var(--accent)">contact me</a>.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year-issue"></span> Piyush Jangir</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year-issue').textContent = new Date().getFullYear();
+
+    // Chart.js: illustrative groundwater trend
+    const ctx = document.getElementById('waterChart').getContext('2d');
+    const waterChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['2016','2017','2018','2019','2020','2021','2022','2023'],
+        datasets: [{
+          label: 'Average groundwater depth (m) — illustrative',
+          data: [15,16,17,18.5,19,20,21.2,22.5],
+          borderColor: 'rgba(6,182,212,0.95)',
+          backgroundColor: 'rgba(6,182,212,0.08)',
+          tension: 0.25,
+          pointRadius:3
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { labels: { color: '#e6eef3' } } },
+        scales: {
+          x: { ticks: { color: '#cbd5e1' } },
+          y: { ticks: { color: '#cbd5e1' } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

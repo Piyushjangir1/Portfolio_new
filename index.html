@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Piyush Jangir — Frontend Developer | UI/UX Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <div class="brand">PJ</div>
+        <div class="brand-text">Piyush Jangir</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="social-issue.html">Social Issue</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="profile-card reveal">
+        <img src="assets/profile.jpg" alt="Piyush Jangir" class="profile-pic">
+        <div class="badges">
+          <div class="badge">Frontend</div>
+          <div class="badge">UI/UX</div>
+          <div class="badge">C++</div>
+          <div class="badge">PHP • MySQL</div>
+        </div>
+      </div>
+
+      <div class="intro reveal">
+        <div class="title">Hi, I'm <span style="color:var(--accent)">Piyush Jangir</span></div>
+        <div class="tagline">Frontend Developer | UI/UX Designer</div>
+        <p class="lead">
+          Main kaam se kaam rakhne wala developer — clean UI, sharp animations, aur production-ready code. I build interactive frontends, design usable interfaces in Figma, and can back them with PHP/MySQL when needed.
+        </p>
+
+        <div class="cta-row">
+          <a href="projects.html" class="btn">See Projects</a>
+          <a href="contact.html" class="btn-outline">Contact Me</a>
+        </div>
+
+        <div style="margin-top:18px;color:var(--muted)">
+          <strong>GitHub:</strong>
+          <a href="https://github.com/Piyushjangir1" style="color:var(--accent);text-decoration:none" target="_blank" rel="noreferrer">github.com/Piyushjangir1</a>
+          &nbsp;•&nbsp;
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/piyush-jangir-99763031a/" style="color:var(--accent);text-decoration:none" target="_blank" rel="noreferrer">/piyush-jangir</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <h3>Gaming Website</h3>
+          <div class="tech">HTML • CSS • JavaScript</div>
+          <p>Interactive gaming portal with custom UI, keyboard controls, score saving and localStorage persistence — built for crisp performance.</p>
+          <div class="links" style="margin-top:10px">
+            <a class="btn-outline" href="https://github.com/Piyushjangir1" target="_blank" rel="noreferrer">View Repo</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Home Expense Tracker</h3>
+          <div class="tech">HTML • CSS • JavaScript (localStorage)</div>
+          <p>Category-based expense tracker with monthly budgets and alerts. Minimal UI, offline-first behavior, perfect for low-bandwidth usage.</p>
+          <div class="links" style="margin-top:10px">
+            <a class="btn-outline" href="https://github.com/Piyushjangir1" target="_blank" rel="noreferrer">View Repo</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Booking Management System</h3>
+          <div class="tech">Laravel • PHP • MySQL</div>
+          <p>Booking system with roles, availability calendar and CRUD operations. Built as a college-to-production style task.</p>
+          <div class="links" style="margin-top:10px">
+            <a class="btn-outline" href="https://github.com/Piyushjangir1" target="_blank" rel="noreferrer">View Repo</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Task Manager App (Laravel)</h3>
+          <div class="tech">Laravel • PHP • MySQL</div>
+          <p>Simple task manager with authentication, RESTful routes and basic notifications. Great for practicing backend structure.</p>
+          <div class="links" style="margin-top:10px">
+            <a class="btn-outline" href="https://github.com/Piyushjangir1" target="_blank" rel="noreferrer">View Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2>Skills & Tools</h2>
+      <div class="card" style="margin-top:12px">
+        <div class="skills" style="padding:8px 0">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">PHP</div>
+          <div class="skill">MySQL</div>
+          <div class="skill">C++</div>
+          <div class="skill">Figma</div>
+        </div>
+        <p style="color:var(--muted);margin-top:12px">I prefer shipping production-ready frontends with clear UX and minimal, maintainable code.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Piyush Jangir — Built with HTML, CSS & JS • <a href="contact.html" style="color:var(--accent);text-decoration:none">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

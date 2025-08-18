@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Piyush Jangir</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <div class="brand">PJ</div>
+        <div class="brand-text">Piyush Jangir</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="social-issue.html">Social Issue</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section reveal">
+      <h2>Contact</h2>
+      <p style="color:var(--muted)">Reach out for internships, collaborations or project feedback. The form will open your default mail client with the message ready to send.</p>
+
+      <div class="contact-grid" style="margin-top:18px">
+        <div class="card reveal">
+          <form id="contact-form">
+            <div class="form-field">
+              <label for="c-name">Your name</label>
+              <input id="c-name" type="text" required placeholder="Piyush Jangir">
+            </div>
+
+            <div class="form-field">
+              <label for="c-email">Your email</label>
+              <input id="c-email" type="email" required placeholder="you@example.com">
+            </div>
+
+            <div class="form-field">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" required placeholder="Type a short message..."></textarea>
+            </div>
+
+            <div style="margin-top:12px">
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="card reveal">
+          <h3>Direct contacts</h3>
+          <p style="color:var(--muted)"><strong>Personal:</strong> <a href="mailto:piyushjangir2007@gmail.com" style="color:var(--accent)">piyushjangir2007@gmail.com</a></p>
+          <p style="color:var(--muted)"><strong>College:</strong> <a href="mailto:piyush12411103@iiitsonepat.ac.in" style="color:var(--accent)">piyush12411103@iiitsonepat.ac.in</a></p>
+          <p style="color:var(--muted)"><strong>GitHub:</strong> <a href="https://github.com/Piyushjangir1" target="_blank" rel="noreferrer" style="color:var(--accent)">github.com/Piyushjangir1</a></p>
+          <p style="color:var(--muted)"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/piyush-jangir-99763031a/" target="_blank" rel="noreferrer" style="color:var(--accent)">/piyush-jangir</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year-contact"></span> Piyush Jangir</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year-contact').textContent = new Date().getFullYear();</script>
+</body>
+</html>

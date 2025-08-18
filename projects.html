@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Piyush Jangir</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <div class="brand">PJ</div>
+        <div class="brand-text">Piyush Jangir</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="social-issue.html">Social Issue</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section reveal">
+      <h2>Projects</h2>
+      <p style="color:var(--muted)">Short descriptions with tech stack and links to sources/demos.</p>
+
+      <div class="projects-grid" style="margin-top:18px">
+        <!-- Gaming website -->
+        <article class="project reveal">
+          <h3>Gaming Website</h3>
+          <div class="tech">HTML • CSS • JavaScript</div>
+          <p>A responsive gaming portal showcasing small browser games — joystick/keyboard controls, scoreboards, and mobile-friendly UI. Built with performance in mind and localStorage score tracking.</p>
+          <div style="margin-top:10px" class="links">
+            <a class="btn-outline" href="https://github.com/Piyushjangir1" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Expense Tracker -->
+        <article class="project reveal">
+          <h3>Home Expense Tracker</h3>
+          <div class="tech">HTML • CSS • JavaScript</div>
+          <p>Category-based expense tracker, monthly budgets, visual summaries. Offline-friendly and easy to use for household budgets.</p>
+          <div style="margin-top:10px" class="links">
+            <a class="btn-outline" href="https://github.com/Piyushjangir1" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Booking Management -->
+        <article class="project reveal">
+          <h3>Booking Management System</h3>
+          <div class="tech">Laravel • PHP • MySQL</div>
+          <p>Full-stack booking manager with availability checks, admin panel, and role-based permissions. Good entry-level enterprise functionality.</p>
+          <div style="margin-top:10px" class="links">
+            <a class="btn-outline" href="https://github.com/Piyushjangir1" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Task Manager Laravel -->
+        <article class="project reveal">
+          <h3>Task Manager App</h3>
+          <div class="tech">Laravel • PHP • MySQL</div>
+          <p>Task CRUD, user authentication, and notification basics. Clean MVC structure to show backend skills.</p>
+          <div style="margin-top:10px" class="links">
+            <a class="btn-outline" href="https://github.com/Piyushjangir1" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year-proj"></span> Piyush Jangir
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year-proj').textContent = new Date().getFullYear();</script>
+</body>
+</html>
